@@ -460,15 +460,19 @@ h2 i {
 /* Certificates */
 .cert-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 18px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: stretch;
 }
 
 .cert-card {
     background: #f9fafb;
     border-radius: 16px;
     border: 1px solid #edf2f7;
-    padding: 16px 16px 14px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    min-height: 220px;   /* Adjust as needed */
 }
 
 .cert-card h3 {
