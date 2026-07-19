@@ -460,9 +460,8 @@ h2 i {
 /* Certificates */
 .cert-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    align-items: stretch;
 }
 
 .cert-card {
@@ -655,6 +654,9 @@ body.dark-mode .info-item span {
 }
 
 @media (max-width: 768px) {
+    .cert-grid {
+        grid-template-columns: 1fr;
+    }
     body {
         padding: 90px 12px 30px;
     }
